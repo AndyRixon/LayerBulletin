@@ -30,4 +30,5 @@ If you can't help yourself, our amazing community can help you. Simple visit our
 On rare occasion our community can not help you, one of our staff will request you to private message them with certain information. If this happens we will lock your support topic and we will update it once your issue has been resolved and to let others know on how to fix it themselves.
 ## Community Customisation
 Customising your community is easy, simply visit the themes (http://forums.layerbulletin.com/forum/layerbulletin-themes-8) or modules (http://forums.layerbulletin.com/forum/layerbulletin-modules-7) forums to get started.
+
 For all resources you can get from the LayerBulletin Community: http://forums.layerbulletin.com/forum/layerbulletin-resources-5
