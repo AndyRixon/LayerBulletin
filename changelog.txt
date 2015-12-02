@@ -1,13 +1,6 @@
-Changelog 1.1.6 > 1.1.7
+Changelog 1.1.7 > TBC
 =============================================================================================================
 THIS CHANGELOG IS SUBJECT TO CHANGE AND IS A WORK-IN-PROGRESS.
 FOR THE LATEST RELEASE OF LAYERBULLETIN PLEASE VISIT: https://github.com/InfernoGroupUK/LayerBulletin/releases
 ==============================================================================================================
-1. Remote Install Modules Removed (AdminCP Template)
-2. Remote Install Themes Removed (AdminCP Template)
-3. Updated Profile Communication to more popular messengers (Snapchat, BlackBerry Messenger, Instagram)
-4. Email Verification On/Off
-
-SQL Changes
-===========
-ALTER TABLE `lb_settings` ADD `email_verification` INT(1) NOT NULL DEFAULT '1' ;
+Nothing to display here.
