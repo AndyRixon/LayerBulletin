@@ -203,8 +203,12 @@ $password= md5($password . $salt);
 
 $register_date=time();
 
-mysql_query("INSERT INTO {$db_prefix}members (name, password, email, role, register_date, password_time, pass_salt) VALUES ('$name', '$password', '$email', '3', '$register_date', '$register_date', '$salt')");
-
+if ($email_verification=='1') {
+	mysql_query("INSERT INTO {$db_prefix}members (name, password, email, role, register_date, password_time, pass_salt) VALUES ('$name', '$password', '$email', '3', '$register_date', '$register_date', '$salt')");
+} else {
+	mysql_query("INSERT INTO {$db_prefix}members (name, password, email, role, register_date, password_time, pass_salt, verified) VALUES ('$name', '$password', '$email', '3', '$register_date', '$register_date', '$salt', 1)");
+}
+	
 $sql="SELECT PASS_SALT FROM {$db_prefix}members WHERE name = '$name'";
 $sql_result = mysql_query($sql) or die ("download.php - Error in query: $sql");
 while($row = mysql_fetch_array($sql_result)) {
@@ -232,13 +236,34 @@ template_hook("pages/register.template.php", "2");
 	$lang['email_register_content'] = str_replace("<%sitename>", $site_name, $lang['email_register_content']);	
 	$lang['email_register_content'] = str_replace("<%site>", $lb_domain, $lang['email_register_content']);
 	$lang['email_register_content'] = str_replace("<%hash>", $hash_id, $lang['email_register_content']);	
-
+if($email_verification=='1') {
 $message=$lang['email_register_content'];
+} else {
+	$lang['email_register_title1'] = str_replace("<%sitename>", $site_name, $lang['email_register_title1']);
+	
+	$lang['email_register_content1'] = str_replace("<%subscriber>", $name, $lang['email_register_content1']);
+	$lang['email_register_content1'] = str_replace("<%password>", $_POST['password'], $lang['email_register_content1']);
+	$lang['email_register_content1'] = str_replace("<%sitename>", $site_name, $lang['email_register_content1']);	
+	$lang['email_register_content1'] = str_replace("<%site>", $lb_domain, $lang['email_register_content1']);
+	$lang['email_register_content1'] = str_replace("<%hash>", $hash_id, $lang['email_register_content1']);	
+	$message=$lang['email_register_content1'];
+}
 
 $outgoing=$_POST['email'];
 $headers="From: $site_name <$board_email>\r\n";
 $headers.="Content-type: text/plain; charset=UTF-8;\r\n";
+if($email_verification=='1') {
 $subject=$lang['email_register_title'];
+} else {
+	$lang['email_register_title1'] = str_replace("<%sitename>", $site_name, $lang['email_register_title1']);
+	
+	$lang['email_register_content1'] = str_replace("<%subscriber>", $name, $lang['email_register_content1']);
+	$lang['email_register_content1'] = str_replace("<%password>", $_POST['password'], $lang['email_register_content1']);
+	$lang['email_register_content1'] = str_replace("<%sitename>", $site_name, $lang['email_register_content1']);	
+	$lang['email_register_content1'] = str_replace("<%site>", $lb_domain, $lang['email_register_content1']);
+	$lang['email_register_content1'] = str_replace("<%hash>", $hash_id, $lang['email_register_content1']);
+	$subject=$lang['email_register_title1'];
+}
 
 mail($outgoing, $subject, $message, $headers);
 

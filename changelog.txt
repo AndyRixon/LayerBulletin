@@ -6,3 +6,8 @@ FOR THE LATEST RELEASE OF LAYERBULLETIN PLEASE VISIT: https://github.com/Inferno
 1. Remote Install Modules Removed (AdminCP Template)
 2. Remote Install Themes Removed (AdminCP Template)
 3. Updated Profile Communication to more popular messengers (Snapchat, BlackBerry Messenger, Instagram)
+4. Email Verification On/Off
+
+SQL Changes
+===========
+ALTER TABLE `lb_settings` ADD `email_verification` INT(1) NOT NULL DEFAULT '1' ;

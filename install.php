@@ -396,7 +396,8 @@ mysql_query("CREATE TABLE `{$db_prefix}groups` (
   `can_see_reported_posts` tinyint(1) NOT NULL default '0',
   `can_use_html` tinyint(1) NOT NULL default '0',
   `can_moderate_members` tinyint(1) NOT NULL default '0',
-  `avoid_caspian` tinyint(1) NOT NULL default '0', 
+  `avoid_caspian` tinyint(1) NOT NULL default '0',
+  `email_verification` INT(1) NOT NULL DEFAULT '1',
   PRIMARY KEY  (`group_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE utf8_general_ci");
 

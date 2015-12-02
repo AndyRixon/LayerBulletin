@@ -83,6 +83,7 @@ if (!defined('LB_RUN')){
 			$stats_post_topic		= $Settings['stats_post_topic'];
 			$default_board_email	= strip_slashes($Settings['board_email']);
 			$register_bar			= $Settings['register_bar'];
+			$email_verification		= $Settings['email_verification'];
 			$module_order			= $Settings['module_order'];
 			$module_limit			= $Settings['module_limit'];
 			$module_method			= strip_slashes($Settings['module_method']);

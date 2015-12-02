@@ -48,6 +48,7 @@ if ($_POST['site_name']!='')
 		$time_offset			= escape_string($_POST['time_offset']);
 		$guest_register			= (int) $_POST['guest_register'];
 		$register_bar			= (int) $_POST['register_bar'];
+		$email_verification		= (int) $_POST['email_verification'];
 		$board_offline			= (int) $_POST['board_offline'];
 		$board_offline_reason	= escape_string($_POST['board_offline_reason']);
 		$online_yesterday		= (int) $_POST['online_yesterday'];
@@ -64,7 +65,7 @@ if ($_POST['site_name']!='')
 			$change_pass_time = 0;
 		}
 
-		mysql_query("UPDATE {$db_prefix}settings SET site_name='$site_name', site_desc='$site_desc', max_guest_clicks='$max_guest_clicks', show_gamer_tags='$show_gamer_tags', max_warn='$max_warn', theme='$new_theme', sef_urls='$sef_urls', time_offset='$time_offset', guest_register='$guest_register', register_bar='$register_bar', board_offline='$board_offline', board_offline_reason='$board_offline_reason', online_yesterday='$online_yesterday', rules='$rules', change_pass_time='$change_pass_time', home='$home', board_lang='$board_lang', board_email='$board_email', username_length = " . $username_length . ", usertitle_length = " . $usertitle_length);
+		mysql_query("UPDATE {$db_prefix}settings SET site_name='$site_name', site_desc='$site_desc', max_guest_clicks='$max_guest_clicks', show_gamer_tags='$show_gamer_tags', max_warn='$max_warn', theme='$new_theme', sef_urls='$sef_urls', time_offset='$time_offset', guest_register='$guest_register', register_bar='$register_bar', email_verification='$email_verification', board_offline='$board_offline', board_offline_reason='$board_offline_reason', online_yesterday='$online_yesterday', rules='$rules', change_pass_time='$change_pass_time', home='$home', board_lang='$board_lang', board_email='$board_email', username_length = " . $username_length . ", usertitle_length = " . $usertitle_length);
 
 		# Delete cache
 		$Cache->delete('settings');

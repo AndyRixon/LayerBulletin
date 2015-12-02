@@ -677,6 +677,19 @@ If you did not register on this website, please disregard this email. Your detai
 Regards,
 <%sitename> Team.",
 
+'email_register_title1'			=> "<%sitename> Welcome Email",
+			'email_register_content1'		=> "Hello <%subscriber>,
+
+You are receiving this email because your email address was used to register on <%sitename> with the following details:
+
+-----------------------------------
+Username: <%subscriber>
+Password: <%password>
+-----------------------------------
+
+Regards,
+<%sitename> Team.",
+
 			'email_members_pass_title'		=> "Password Change on <%sitename>",
 			'email_members_pass_content'	=> "Dear: <%subscriber>,
 

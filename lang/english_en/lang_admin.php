@@ -419,6 +419,10 @@ $lang_admin = array (
 			'settings_guests_desc'			=> "Turning off this option means no further guests can register to become a member of your forum.",
 			'settings_guests_allow'			=> "Allow registrations?",
 			
+			'settings_email_verification'			=> "Email Verification",
+			'settings_email_verification_desc'		=> "Turning off this options means that new users will not need to verify their account by email.",
+			'settings_email_verification_on'		=> "Enable Email Verification?",
+			
 			'settings_register_bar_title'	=> "Registration Bar",
 			'settings_register_bar_desc'	=> "This displays a bar at the top of the forum to tell guests they should register.",
 			'settings_register_bar_allow'	=> "Show Register Bar?",
