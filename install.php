@@ -9,7 +9,7 @@ ob_start();
 session_start();
 
 define("LB_RUN", 1);
-define("LB_VERSION", '1.1.6');
+define("LB_VERSION", '1.1.7');
 
 $my_address		= 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
 $lb_domain 	= str_replace('/install.php', '', $my_address);
