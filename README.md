@@ -1,4 +1,4 @@
-# LayerBulletin 1.1.7
+# LayerBulletin 1.1.6
 LayerBulletin is a small yet feature rich community software which enables you to quickly and easily start your own community. It offers great flexibility and easily customisable.
 ## Installation
 1. Download the latest reelease from GitHub: https://github.com/InfernoGroupUK/LayerBulletin/releases
