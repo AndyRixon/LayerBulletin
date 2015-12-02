@@ -7,6 +7,7 @@ LayerBulletin is a small yet feature rich community software which enables you t
 4. Using your browser, navigate to the installation script (I.E: http://yourdomain.com/install.php).
 5. Follow the instructions that you see on your screen.
 6. There is no step 6, LayerBulletin should now of installed successfully.
+
 If you had issues during installation, please consult the "Help Me!" section of this README.
 ## Updating
 1. Download the latest reelease from GitHub: https://github.com/InfernoGroupUK/LayerBulletin/releases
@@ -17,6 +18,7 @@ If you had issues during installation, please consult the "Help Me!" section of 
 6. Using your browser, navigate to the update script (I.E: http://yourdomain.com/update.php).
 7. Follow the instructions that you see on your screen.
 8. There is no step 8, LayerBulletin should now of updated successfully.
+
 If you had issues during updating, please consult the "Help Me!" section of this README.
 ## Help Me!
 From time to time you may come across an issue with installation or updating, or even while using LayerBulletin - which is why we have created these quick resources where you will be able get help quickly.
