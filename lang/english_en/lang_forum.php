@@ -272,6 +272,7 @@ $lang = array (
 			'admin_link_moderators'			=> "Moderators",	
 			'admin_link_mass_email'			=> "Mass Email",			
 			'admin_link_paypal'				=> "PayPal Subscriptions",
+			'admin_title_mods'				=> "Moderator Tools",
 
 		// banned
 			'banned_message'				=> "This Account Has Been Banned",

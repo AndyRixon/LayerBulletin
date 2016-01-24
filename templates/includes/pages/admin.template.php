@@ -24,10 +24,6 @@
 				<tr>
 					<td class="forum-jump-content forum-index-top" onmouseover="this.className='forum-jump-content-hover forum-index-top'" onmouseout="this.className='forum-jump-content forum-index-top'"><a class="forum-index-link-to-topic" href="<?php echo lb_link("index.php?page=admin&act=spam", "admin/spam"); ?>"><?php echo $lang['admin_link_spam']; ?></a></td>
 				</tr>			
-<?php } if ($can_change_forum_settings=='1'){ ?>
-				<tr>
-					<td class="forum-jump-content forum-index-top" onmouseover="this.className='forum-jump-content-hover forum-index-top'" onmouseout="this.className='forum-jump-content forum-index-top'"><a class="forum-index-link-to-topic" href="<?php echo lb_link("index.php?page=admin&act=filter", "admin/filter"); ?>"><?php echo $lang['admin_link_censor']; ?></a></td>
-				</tr>
 <?php } if ($can_change_site_settings=='1'){ ?>
 				<tr>
 					<td class="forum-jump-content forum-index-top" onmouseover="this.className='forum-jump-content-hover forum-index-top'" onmouseout="this.className='forum-jump-content forum-index-top'"><a class="forum-index-link-to-topic" href="<?php echo lb_link("index.php?page=admin&act=attachments", "admin/attachments"); ?>"><?php echo $lang['admin_link_attachments']; ?></a></td>
@@ -51,14 +47,6 @@
 <?php } if ($can_change_forum_settings=='1'){ ?>
 				<tr>
 					<td class="forum-jump-content forum-index-top" onmouseover="this.className='forum-jump-content-hover forum-index-top'" onmouseout="this.className='forum-jump-content forum-index-top'"><a class="forum-index-link-to-topic" href="<?php echo lb_link("index.php?page=admin&act=custom", "admin/custom"); ?>"><?php echo $lang['admin_link_custom']; ?></a></td>
-				</tr>
-<?php } if ($can_change_forum_settings=='1'){ ?>
-				<tr>
-					<td class="forum-jump-content forum-index-top" onmouseover="this.className='forum-jump-content-hover forum-index-top'" onmouseout="this.className='forum-jump-content forum-index-top'"><a class="forum-index-link-to-topic" href="<?php echo lb_link("index.php?page=admin&act=report", "admin/report"); ?>"><?php echo $lang['admin_link_reported']; ?></a></td>
-				</tr>
-<?php } if ($can_change_forum_settings=='1'){ ?>
-				<tr>
-					<td class="forum-jump-content forum-index-top" onmouseover="this.className='forum-jump-content-hover forum-index-top'" onmouseout="this.className='forum-jump-content forum-index-top'"><a class="forum-index-link-to-topic" href="<?php echo lb_link("index.php?page=admin&act=preview", "admin/preview"); ?>"><?php echo $lang['admin_link_approve']; ?></a></td>
 				</tr>			
 <?php } if ($can_change_forum_settings=='1'){ ?>
 				<tr>
@@ -112,6 +100,23 @@
 		
 		</td>
 	</tr>
+	</table>
+			<table class="forum-board-forum-head" cellpadding="0" cellspacing="0">
+				<tr><td class="forum-topic-subject"><?php echo $lang['admin_title_mods']; ?></td></tr>
+			</table>
+			<table class="forum-index" cellpadding="0" cellspacing="0">
+			<?php } if ($can_change_forum_settings=='1'){ ?>
+				<tr>
+					<td class="forum-jump-content forum-index-top" onmouseover="this.className='forum-jump-content-hover forum-index-top'" onmouseout="this.className='forum-jump-content forum-index-top'"><a class="forum-index-link-to-topic" href="<?php echo lb_link("index.php?page=admin&act=report", "admin/report"); ?>"><?php echo $lang['admin_link_reported']; ?></a></td>
+				</tr>
+<?php } if ($can_change_forum_settings=='1'){ ?>
+				<tr>
+					<td class="forum-jump-content forum-index-top" onmouseover="this.className='forum-jump-content-hover forum-index-top'" onmouseout="this.className='forum-jump-content forum-index-top'"><a class="forum-index-link-to-topic" href="<?php echo lb_link("index.php?page=admin&act=preview", "admin/preview"); ?>"><?php echo $lang['admin_link_approve']; ?></a></td>
+				</tr>
+				<?php } if ($can_change_forum_settings=='1'){ ?>
+				<tr>
+					<td class="forum-jump-content forum-index-top" onmouseover="this.className='forum-jump-content-hover forum-index-top'" onmouseout="this.className='forum-jump-content forum-index-top'"><a class="forum-index-link-to-topic" href="<?php echo lb_link("index.php?page=admin&act=filter", "admin/filter"); ?>"><?php echo $lang['admin_link_censor']; ?></a></td>
+				</tr>
 <?php } ?>
 			</table>
 
