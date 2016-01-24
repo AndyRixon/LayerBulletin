@@ -49,6 +49,7 @@ if ($_POST['site_name']!='')
 		$guest_register			= (int) $_POST['guest_register'];
 		$register_bar			= (int) $_POST['register_bar'];
 		$email_verification		= (int) $_POST['email_verification'];
+		$member_flags    		= (int) $_POST['member_flags'];
 		$board_offline			= (int) $_POST['board_offline'];
 		$board_offline_reason	= escape_string($_POST['board_offline_reason']);
 		$online_yesterday		= (int) $_POST['online_yesterday'];

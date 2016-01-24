@@ -423,6 +423,10 @@ $lang_admin = array (
 			'settings_email_verification_desc'		=> "Turning off this options means that new users will not need to verify their account by email.",
 			'settings_email_verification_on'		=> "Enable Email Verification?",
 			
+			'settings_member_flags'			=> "Member Flags",
+			'settings_member_flags_desc'	=> "Turning off this options means that member flags will not be displayed.",
+			'settings_member_flags_on'		=> "Enable Member Flags?",
+			
 			'settings_register_bar_title'	=> "Registration Bar",
 			'settings_register_bar_desc'	=> "This displays a bar at the top of the forum to tell guests they should register.",
 			'settings_register_bar_allow'	=> "Show Register Bar?",

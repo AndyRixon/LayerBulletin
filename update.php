@@ -9,7 +9,7 @@ session_start();
 
 define("NOVA_RUN", 1);
 define("LB_RUN", 1);
-define("LB_VERSION", '1.1.7');
+define("LB_VERSION", '1.1.8');
 
 $my_address		= 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
 $lb_domain 	= str_replace('/update.php', '', $my_address);
@@ -78,7 +78,7 @@ if (!defined(\'LB_RUN\')){
 	case '2':
 		unlink('cache/settings.php');
 		echo 'LayerBulletin is currently updating the database, please wait...';
-			mysql_query("ALTER TABLE `lb_settings` ADD `email_verification` INT(1) NOT NULL DEFAULT '1' ;");
+			mysql_query("ALTER TABLE `lb_settings` ADD `member_flags` INT(1) NOT NULL DEFAULT '1' ;");
 			echo '<br />Database has now been updated!<br /><a href="update.php?step=3">Click here to continue with the update!</a>';
 	break;
 	case '3':

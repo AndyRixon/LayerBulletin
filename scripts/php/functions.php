@@ -997,12 +997,20 @@ else{
 				{
 					if ($member_flag=='')
 					{
-						$member_html .= "<img src=\"$lb_domain/$flag_path/0.png\" alt=\"\" />";
+						if ($member_flags=="1"){
+							$member_html .= "<img src=\"$lb_domain/$flag_path/0.png\" alt=\"\" />";
+						} else {
+							$member_html .= "";
+						}
 
 					}
 					else
 					{
-						$member_html .= "<img src=\"$lb_domain/$flag_path/$member_flag.png\" alt=\"\" />";
+						if ($member_flags=="1"){
+							$member_html .= "<img src=\"$lb_domain/$flag_path/$member_flag.png\" alt=\"\" />";
+						} else {
+							$member_html .= "";
+						}
 					}
 				}
 				

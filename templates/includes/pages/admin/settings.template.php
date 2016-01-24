@@ -130,6 +130,21 @@
 					</div>
 				</td></tr>
 				
+				<tr><td class="forum-index-stats-header forum-index-top"><?php echo $lang_admin['settings_member_flags']; ?></td></tr>
+				<tr><td class="forum-jump-content forum-index-top forum-index-bottom">
+					<?php echo $lang_admin['settings_member_flags_desc']; ?><br /><br />
+					<div style="width: 30%; float: left;">
+						<strong><?php echo $lang_admin['settings_member_flags_on']; ?></strong>
+					</div>
+					<div style="width: 70%; float: left;">
+<?php if ($member_flags=="1"){ ?>
+						<input type="checkbox" class="checkbox" name="member_flags" value="1" checked />
+<?php }else{ ?>
+						<input type="checkbox" class="checkbox" name="member_flags" value="1" />
+<?php } ?>
+					</div>
+				</td></tr>
+				
 				<tr>
 					<td class="forum-index-stats-header forum-index-top">
 						<?php echo $lang_admin['settings_username_title']; ?>

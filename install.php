@@ -9,7 +9,7 @@ ob_start();
 session_start();
 
 define("LB_RUN", 1);
-define("LB_VERSION", '1.1.7');
+define("LB_VERSION", '1.1.8');
 
 $my_address		= 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
 $lb_domain 	= str_replace('/install.php', '', $my_address);
@@ -398,6 +398,7 @@ mysql_query("CREATE TABLE `{$db_prefix}groups` (
   `can_moderate_members` tinyint(1) NOT NULL default '0',
   `avoid_caspian` tinyint(1) NOT NULL default '0',
   `email_verification` INT(1) NOT NULL DEFAULT '1',
+  `member_flags` INT(1) NOT NULL DEFAULT '1',
   PRIMARY KEY  (`group_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE utf8_general_ci");
 
