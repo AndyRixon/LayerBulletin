@@ -1,11 +1,15 @@
 <?php
+define("ENABLE_HTTPS", 0);
 
 @ini_set('allow_url_fopen', 1);
 @ini_set('zlib.output_compression', 1);
 
 // set lb variables
-
-$my_address="http://".$_SERVER['HTTP_HOST']."".$_SERVER['PHP_SELF'];
+if(ENABLE_HTTPS==0){
+	$my_address="http://".$_SERVER['HTTP_HOST']."".$_SERVER['PHP_SELF'];
+} else {
+	$my_address="https://".$_SERVER['HTTP_HOST']."".$_SERVER['PHP_SELF'];
+}
 
 $lb_domain 	= htmlspecialchars(str_replace('/index.php', '', $my_address)); 	// returns http://myforum.com/forum style address
 $lb_root		= str_replace('index.php', '', __FILE__); 		// returns /home/account/{account}/path/to/forum style address
