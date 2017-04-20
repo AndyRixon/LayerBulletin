@@ -4,3 +4,4 @@ THIS CHANGELOG IS SUBJECT TO CHANGE AND IS A WORK-IN-PROGRESS.
 FOR THE LATEST RELEASE OF LAYERBULLETIN PLEASE VISIT: https://github.com/InfernoGroupUK/LayerBulletin/releases
 ==============================================================================================================
 - Added support for HTTPS/SSL (Setable within index.php)
+- Fixed Issue #4 - Recaptcha failed in SSL (https://github.com/InfernoGroupUK/LayerBulletin/issues/4)
