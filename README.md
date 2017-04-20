@@ -1,5 +1,5 @@
-# LayerBulletin 1.1.7
-** At this time, LayerBulletin 1.1.7 does not support MySQLi Database drivers for PHP, we are working on this and plan to have this fixed within 1.1.8 **
+# LayerBulletin 1.1.8
+** At this time, LayerBulletin 1.1.8 does not support MySQLi Database drivers for PHP, we are working on this and plan to have this fixed in the future **
 
 LayerBulletin is a small yet feature rich community software which enables you to quickly and easily start your own community. It offers great flexibility and easily customisable.
 ## Installation

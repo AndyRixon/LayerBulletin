@@ -7,7 +7,6 @@ ini_set('magic_quotes_runtime', 0);
 ob_start();
 session_start();
 
-define("NOVA_RUN", 1);
 define("LB_RUN", 1);
 define("LB_VERSION", '1.1.8');
 
@@ -78,7 +77,7 @@ if (!defined(\'LB_RUN\')){
 	case '2':
 		unlink('cache/settings.php');
 		echo 'LayerBulletin is currently updating the database, please wait...';
-			mysql_query("ALTER TABLE `lb_settings` ADD `member_flags` INT(1) NOT NULL DEFAULT '1' ;");
+			mysql_query("UPDATE `".$new_db_prefix."settings` SET `lb_version` = '1.1.8'");
 			echo '<br />Database has now been updated!<br /><a href="update.php?step=3">Click here to continue with the update!</a>';
 	break;
 	case '3':
