@@ -1,6 +1,14 @@
-# LayerBulletin 1.1.8
-** At this time, LayerBulletin 1.1.8 does not support MySQLi Database drivers for PHP, we are working on this and plan to have this fixed in the future **
+# Discontinued
+LayerBulletin has now been discontinued, we have decided that because of the mess that the community and software was in it was best to discontinue the software.
 
+Not to fear, Andy Rixon is still working on forum software and has opened up a new project which hopes to be a fresh start for everyone, which has been called LayerBB.
+
+## LayerBB GitHub: https://github.com/InfernoGroupUK/LayerBB
+## LayerBB Website: https://www.layerbb.com
+
+Please come by and check it out!
+
+# LayerBulletin 1.1.8
 LayerBulletin is a small yet feature rich community software which enables you to quickly and easily start your own community. It offers great flexibility and easily customisable.
 ## Installation
 1. Download the latest release from GitHub: https://github.com/InfernoGroupUK/LayerBulletin/releases
