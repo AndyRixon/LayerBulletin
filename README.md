@@ -3,7 +3,7 @@ LayerBulletin has now been discontinued, we have decided that because of the mes
 
 Not to fear, Andy Rixon is still working on forum software and has opened up a new project which hopes to be a fresh start for everyone, which has been called LayerBB.
 
-## LayerBB GitHub: https://github.com/InfernoGroupUK/LayerBB
+## LayerBB GitHub: https://github.com/AndyRixon/LayerBB
 ## LayerBB Website: https://www.layerbb.com
 
 Please come by and check it out!
@@ -11,7 +11,7 @@ Please come by and check it out!
 # LayerBulletin 1.1.8
 LayerBulletin is a small yet feature rich community software which enables you to quickly and easily start your own community. It offers great flexibility and easily customisable.
 ## Installation
-1. Download the latest release from GitHub: https://github.com/InfernoGroupUK/LayerBulletin/releases
+1. Download the latest release from GitHub: https://github.com/AndyRixon/LayerBulletin/releases
 2. Unzip the archive you downloaded to your computer using 7-Zip or WinRar.
 3. Upload the contents of the "upload" folder using an FTP client such as FileZilla.
 4. Using your browser, navigate to the installation script (I.E: http://yourdomain.com/install.php).
@@ -20,7 +20,7 @@ LayerBulletin is a small yet feature rich community software which enables you t
 
 If you had issues during installation, please consult the "Help Me!" section of this README.
 ## Updating
-1. Download the latest release from GitHub: https://github.com/InfernoGroupUK/LayerBulletin/releases
+1. Download the latest release from GitHub: https://github.com/AndyRixon/LayerBulletin/releases
 2. Unzip the archive you downloaded to your computer using 7-Zip or WinRar.
 3. Upload the contents of the "upload" folder using an FTP client such as FileZilla.
 4. Remove the file named "updater.lock" from the "cache" directory.
